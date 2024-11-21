@@ -1,0 +1,139 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Form input and button styles */
+.inputfield {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.inputfield input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 75%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.inputfield .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inputfield .btn:hover {
+    background-color: #45a049;
+}
+
+/* Task list container */
+.task-list {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.task-item .task {
+    flex-grow: 1;
+}
+
+.task-item .completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-item .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.task-item .buttons button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.task-item .buttons .delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.task-item .buttons .delete:hover {
+    background-color: #c0392b;
+}
+
+.task-item .buttons .complete {
+    background-color: #f39c12;
+    color: white;
+}
+
+.task-item .buttons .complete:hover {
+    background-color: #e67e22;
+}
+
+.task-item .buttons .edit {
+    background-color: #3498db;
+    color: white;
+}
+
+.task-item .buttons .edit:hover {
+    background-color: #2980b9;
+}
+
+.clearall{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(53, 141, 185);
+    cursor: pointer;
+   
+}
